@@ -40,3 +40,14 @@
 .read-the-docs {
   color: #888;
 }
+
+.form {
+  float: left;
+  text-align: left;
+  width: 100%;
+}
+
+.input-normal {
+  width: 100%;
+  padding: 5px;
+}
