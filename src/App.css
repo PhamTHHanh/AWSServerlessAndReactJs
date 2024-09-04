@@ -27,7 +27,7 @@
 .book-container {
   border-color: #003240aa;
   /* text-align: center; */
-  float:left;
+  float: left;
   height: 30%;
 }
 
@@ -38,9 +38,25 @@
 }
 
 .btn-primary {
-  background-color: #EC7211;
+  background-color: #ec7211;
   color: white;
   margin: 10px 0px;
+}
+
+.btn-primary:hover {
+  background-color: #ce5c00;
+  border-color: #ce5c00;
+}
+
+.btn-secondary {
+  margin: 10px 5px;
+  background-color: #888;
+  color: white;
+}
+
+.btn-secondary:hover {
+  background-color: #727272;
+  border-color: #727272;
 }
 
 @keyframes logo-spin {
@@ -64,4 +80,91 @@
 
 .read-the-docs {
   color: #888;
+}
+.popup-root {
+  position: fixed;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #232f3eb3;
+  inset: 0;
+  z-index: 5000;
+}
+.hidden {
+  display: none;
+}
+
+.show {
+  display: flex;
+}
+
+.popup-default {
+  align-self: flex-start;
+  margin-block: auto;
+  margin-inline: auto;
+  padding-block: 12px;
+  padding-inline: 0;
+  z-index: 5000;
+  pointer-events: none;
+  inline-size: calc(100vw - 12px * 2);
+}
+
+.popup-large {
+  max-inline-size: 700px;
+}
+
+.popup-container {
+  border-collapse: initial;
+  border-spacing: 0;
+  box-sizing: border-box;
+  background-color: white;
+  z-index: 5000;
+  pointer-events: all;
+  padding: 10px 20px;
+  border-radius: 16px;
+}
+
+.popup-inner {
+  font-weight: 700;
+  font-size: 20px;
+  padding-bottom: 10px;
+}
+
+.popup-footer {
+  padding-top: 20px;
+}
+
+.form-feild {
+  padding-top: 16px;
+  font-size: 14px;
+  line-height: 20px;
+  box-sizing: border-box;
+}
+
+.form-feild .label {
+  font-weight: 700;
+}
+
+.form-feild input {
+  border-collapse: initial;
+  border-spacing: 0;
+  visibility: visible;
+  font-weight: 400;
+  padding-block: 4px;
+  padding-inline: 12px;
+  color: #000716;
+  inline-size: 100%;
+  cursor: text;
+  box-sizing: border-box;
+  background-color: #fff;
+  border-radius: 8px;
+  border-block: 2px solid#7d8998;
+  border-inline: 2px solid#7d8998;
+  font-size: 14px;
+  line-height: 20px;
+  block-size: 32px;
+}
+
+.button-group {
+  text-align: end;
 }
